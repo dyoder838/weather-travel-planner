@@ -1,0 +1,71 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+    
+        <main class="container">
+
+            <!-- big row 2 columns - one for nav, one for dynamic content -->
+            <section class="row">
+            
+                <!-- nav payne on left, giant column -->
+                <nav class= "col s4" >
+                    <!-- search bar -->
+                    <form action="" class="row">
+                        <input class="col s12" type="text" placeholder="city search">
+                    </form>
+
+                    <!-- saved cities  -->
+                    <aside class="row">
+
+                        <article class="col s12">
+                        <h2>My Cities</h2>
+                        <!-- dynamic city links go here -->
+                        </article>  
+
+                    </aside>
+
+                </nav>
+
+                <!-- dynamic HTML area -->
+                <section class="col s8">
+                    <!-- 3 more rows, main info payne, small info reference bar, 5 day forcast bar (5 col each)  -->
+                    
+                    <!-- main info payne -->
+                    <article id="info-row" class="row">
+
+                    </article>
+
+                    <!-- small info reference bar -->
+                    <article id="small-info-row" class="row">
+
+                    </article>
+
+                    <!-- 5 day forcast row w/ 5 columns -->
+                    <article id="five-day-forcast-row" class="row">
+
+                    </article>
+
+                </section>
+
+            </section> 
+    
+        </main>
+
+
+      <!--JavaScript at end of body for optimized loading-->
+
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="script.js"></script>
+    </body>
+  </html>
+        
