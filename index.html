@@ -6,52 +6,95 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="style.css">
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <title>Weather Finder</title>
     </head>
     <body>
     
-        <main class="container">
+        <main>
 
             <!-- big row 2 columns - one for nav, one for dynamic content -->
             <section class="row">
             
-                <!-- nav payne on left, giant column -->
-                <nav class= "col s4" >
+                <!-- left side column, right side column -->
+                <section id="left-column" class= "col s4" >
                     <!-- search bar -->
-                    <form action="" class="row">
-                        <input class="col s12" type="text" placeholder="city search">
+                    <form class="row">
+                        <i class="col s2 small material-icons">location_city</i> <input class="col s9 validate" type="text" placeholder="city search">
                     </form>
 
                     <!-- saved cities  -->
                     <aside class="row">
 
-                        <article class="col s12">
-                        <h2>My Cities</h2>
+                        <article class="col s11">
+
+                        <h1>My Cities</h1>
+                        <div>
+
+                        </div>
+                        
                         <!-- dynamic city links go here -->
-                        </article>  
+                        </article>
 
                     </aside>
 
-                </nav>
+                </section>
 
                 <!-- dynamic HTML area -->
-                <section class="col s8">
+                <section id="right-column" class="col s8">
                     <!-- 3 more rows, main info payne, small info reference bar, 5 day forcast bar (5 col each)  -->
                     
                     <!-- main info payne -->
-                    <article id="info-row" class="row">
+                    <article id="main-info-row" class="row">
+
+                        <div id="main info" class="col s12 card large">
+
+                        </div>
 
                     </article>
 
                     <!-- small info reference bar -->
                     <article id="small-info-row" class="row">
 
+                        <nav>
+                            <div class="nav-wrapper col s12">
+                                <a class="brand-logo center">Logo</a>
+                            </div>
+                        </nav>
+
                     </article>
 
-                    <!-- 5 day forcast row w/ 5 columns -->
+                    <!-- 5 day forcast row w/ 5 columns !!!!!Columns need to be dynamic!!!!!-->
                     <article id="five-day-forcast-row" class="row">
+
+                        <div id="day1" class="col s2">
+
+                        </div>
+
+                        <div id="day2" class="col s2">
+
+                        </div>
+
+                        <div id="day3" class="col s2">
+
+                        </div>
+
+                        <div id="day4" class="col s2">
+
+                        </div>
+
+                        <div id="day5" class="col s2">
+
+                        </div>
+
+                        <div id="day6" class="col s2">
+
+                        </div>
+
 
                     </article>
 
