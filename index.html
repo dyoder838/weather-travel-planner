@@ -1,7 +1,9 @@
 
   <!DOCTYPE html>
-  <html>
+  <html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
@@ -9,7 +11,7 @@
       <link rel="stylesheet" href="style.css">
 
       <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <title>Weather Finder</title>
     </head>
@@ -24,7 +26,8 @@
                 <section id="left-column" class= "col s4" >
                     <!-- search bar -->
                     <form class="row">
-                        <i class="col s2 small material-icons">location_city</i> <input class="col s9 validate" type="text" placeholder="city search">
+                        <i class="col s2 small material-icons">location_city</i> <input id="user-input" class="col s7 validate" type="text" placeholder="city search">
+                        <button id="input-button" class="col s2"></button>
                     </form>
 
                     <!-- saved cities  -->
@@ -52,7 +55,9 @@
                     <article id="main-info-row" class="row">
 
                         <div id="main info" class="col s12 card large">
-
+                            <section class="row">
+                                
+                            </article>
                         </div>
 
                     </article>
